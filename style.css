@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1 {
+   color: black;
+   text-align: center;
+   padding: 20px;
+}
+
+.contenedor {
+   width: 400px;
+   height: 400px;
+    display: flex;
+    border: 2px solid black;
+    overflow: hidden;
+
+}
+
+.cuadrado {
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    position: relative;
+   top: 160px;
+   left: 165px;
+   animation-name: colores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes colores {
+    0% {background-color: royalblue;}
+    25% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: royalblue;}
+}
+    .cuadrado2 {
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    position: relative;
+   top: 10px;
+   left: -30px;
+   animation-name: colores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation: move 6s infinite;
+  
+    
+    
+}
+@keyframes move {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(200px, 0);}
+    50% {transform: translate(200px, 300px);}
+    75% {transform: translate(0, 300px);}
+    100% {transform: translate(0, 0);}
+}
